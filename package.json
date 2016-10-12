@@ -4,8 +4,11 @@
   "description": "Example of front techs homework #1",
   "main": "index.html",
   "scripts": {
-    "start": "node_modules/.bin/http-server"
-  },
+	"build": "./node_modules/.bin/webpack --display-error-details",
+	"start": "./node_modules/.bin/webpack-dev-server --content-base dist",
+    "babel": "./node_modules/.bin/babel src -d dist"
+	},
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nnpnew/MyPokedex.git"
@@ -17,6 +20,7 @@
   },
   "homepage": "https://github.com/nnpnew/MyPokedex#readme",
   "devDependencies": {
+    "babel-cli": "^6.16.0",
     "http-server": "^0.9.0"
   }
 }
