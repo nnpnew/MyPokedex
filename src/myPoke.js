@@ -72,7 +72,7 @@ const Content = (props) => (
     </section>
 )
 
-const Hello = () => {
+const myPoke = () => {
      const title = ' My Pokedex '
     return (
         <section>
@@ -83,5 +83,5 @@ const Hello = () => {
     )
 }
 
-const element = document.getElementById('hello')
-ReactDOM.render(<Hello />,element)
+const element = document.getElementById('myPoke')
+ReactDOM.render(<MyPoke />,element)
